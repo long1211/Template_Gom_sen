@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout - Gốm Sen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://ka-f.fontawesome.com/releases/v5.15.1/css/free.min.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="libs/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href='css/style.css' />
+</head>
+
+<body id="top">
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="col-lg-3 navbar-brand" href="/">
+                        <img src="img/icon svg/logo.svg" class="img-fluid" width="20%">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img src='img/Shape.png' /></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-lg-6" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Shop <i class="fas fa-caret-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="/shop.html">GỐM TRANG TRÍ</a></li>
+                                    <li><a href="">GỐM GIA DỤNG</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 icon-menu d-flex justify-content-end">
+                        <img src="img/icon svg/search.svg" alt="" class="pr-3">
+                        <img src="img/icon svg/profile.svg" alt="" class="pr-3">
+                        <img src="img/icon svg/cart.svg" alt="" width="10%">
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container-fluid no-padding">
+            <div class="banner-checkout"></div>
+        </div>
+
+        <!-- Checkout -->
+        <div class="margintop" style="margin-top: 8rem;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="notices-wrapper">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Returning customer?
+                        <a href="#">Click here to login</a>
+                    </div>
+                </div>
+                <div class="col-12" style="margin-top: 2rem;">
+                    <div class="notices-wrapper">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Have a coupon?
+                        <a href="#">Click here to enter your code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-import mt-4">
+                        <h5>BILLING DETAILS</h5>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">First name
+                                    <abbr class="required">*</abbr>
+                                </label>
+                                <input class="form-control" type="text" name="first-name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Last name
+                                    <abbr class="required">*</abbr>
+                                </label>
+                                <input class="form-control" type="text" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company name (optional)
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <input class="form-control" type="text" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <select class="form-control" name="country">
+                                <option label="Viet Nam"></option>
+                                <option label="Nhat Ban"></option>
+                                <option label="Hoa Ki"></option>
+                                <option label="Nga"></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Street address
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <input class="form-control" type="text" name="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="postcode">Postcode/Zip
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <input class="form-control" type="text" name="postcode" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Town/City
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <input class="form-control" type="text" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <input class="form-control" type="text" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address
+                                <abbr class="required">*</abbr>
+                            </label>
+                            <input class="form-control" type="email" name="email" required>
+                        </div>
+                        <div class="create_acc">
+                            <input class="check" type="checkbox" name="">
+                            <span>Create an account?</span>
+                        </div>
+                        <h5 class="mb-3">ADDITIONAL INFORMATION</h5>
+                        <div class="infor">
+                            <div>
+                                <label for="infor">Order notes (optional)</label>
+                            </div>
+                            <textarea name="order_comments"
+                                placeholder="Notes about your order, e.g. special notes for delivery." width="100%"
+                                rows="2" cols="72"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="place-order form-import mt-5">
+                        <h5>YOUR ORDER</h5>
+                        <div class="order-table-wrap">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="product-name d-none">Product</th>
+                                        <th class="product-total d-none">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="cart_item">
+                                        <td class="product-name">
+                                            White leaf plate&nbsp; <span class="product-quantity">× 4</span>
+                                        </td>
+                                        <td class="product-total">
+                                            <span class=""><span class="">$</span>144.00</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="cart-subtotal">
+                                        <th>Subtotal</th>
+                                        <td><strong><span class=""><span class="">$</span>144.00</span></strong>
+                                    </tr>
+
+                                    <tr class="order-total">
+                                        <th>Total</th>
+                                        <td><strong><span class=""><span class="">$</span>144.00</span></strong>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+
+                        </div>
+                        <ul class="wc_payment_methods payment_methods methods">
+                            <li class="wc_payment_method payment_method_bacs">
+                                <input id="payment_method_bacs" type="radio" class="input-radio" name="payment_method"
+                                    value="bacs" checked="checked" data-order_button_text="">
+
+                                <label for="payment_method_bacs">
+                                    Direct bank transfer </label>
+                                <div class="payment_box payment_method_bacs">
+                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
+                                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
+                                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum 
+                                        iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla </p>
+                                </div>
+                            </li>
+                            <li class="wc_payment_method payment_method_cheque">
+                                <input id="payment_method_cheque" type="radio" class="input-radio" name="payment_method"
+                                    value="cheque" data-order_button_text="">
+
+                                <label for="payment_method_cheque">
+                                    Check payments </label>
+                                <div class="payment_box payment_method_cheque" style="display:none;">
+                                    <p>Please send a check to Store Name, Store Street, Store Town, Store State /
+                                        County, Store Postcode.</p>
+                                </div>
+                            </li>
+                            <li class="wc_payment_method payment_method_cod">
+                                <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method"
+                                    value="cod" data-order_button_text="">
+
+                                <label for="payment_method_cod">
+                                    Cash on delivery </label>
+                                <div class="payment_box payment_method_cod" style="display:none;">
+                                    <p>Pay with cash upon delivery.</p>
+                                </div>
+                            </li>
+                            <li class="wc_payment_method payment_method_wcvendors_test_gateway">
+                                <input id="payment_method_wcvendors_test_gateway" type="radio" class="input-radio"
+                                    name="payment_method" value="wcvendors_test_gateway" data-order_button_text="">
+
+                                <label for="payment_method_wcvendors_test_gateway">
+                                    WC Vendors Test Gateway </label>
+                                <div class="payment_box payment_method_wcvendors_test_gateway" style="display:none;">
+                                    <p>This is a test gateway — not to be used on live sites for live transactions. <a
+                                            href="http://www.wcvendors.com/" target="top">Click here to visit
+                                            WCVendors.com</a>.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="policy">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt
+                                ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                nostrud exerci
+                            </p>
+                        </div>
+                        <button type="submit" class="btn btn-order">PLACE ORDER</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEWSLETTER -->
+        <div class="margintop" style="margin-top: 6.5rem"></div>
+        <div class="send-email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center form-email">
+                        <h3>SEND YOUR EMAIL</h3>
+                        <form action="" class="form-news">
+                            <input type="email" name="email" placeholder="ENTER YOUR EMAIL" />
+                            <button type="submit">SUBCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 d-flex justify-content-center  mt-5 mb-5">
+                        <a href="/" class="img-footer link">
+                            <img src="img/icon svg/logo.svg" width="100%" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-3  d-flex justify-content-center mt-5 mb-5">
+                        <div class="link">
+                            <h3>QUICK LINKS</h3>
+                            <ul>
+                                <li>
+                                    <a href="">What We Do</a>
+                                </li>
+                                <li>
+                                    <a href="">Meet The Team</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQ Page</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-3  d-flex justify-content-center  mt-5 mb-5">
+                        <div class="link">
+                            <h3>FIND A STORE</h3>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i><a href="">Số 33, ngõ 33 nguyễn An Ninh, Tương
+                                        Mai</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i><a href="">Quận Hoàng Mai, Hà Nội.</a>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone-alt"></i><a href="tel:+84 123 456 789">+84 123 456 789</a>
+                                </li>
+                                <li>
+                                    <div class="social">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-google-plus-g"></i>
+                                        <i class="fab fa-instagram"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3  d-flex justify-content-center  mt-5 mb-5">
+
+                        <div class="instagram-box ins-pt">
+                            <ul class="follow-instagram">
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/05//obc-ins01-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/05//obc-ins04-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/05//obc-ins02-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/05//obc-ins03-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/05//obc-ins03-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/06//obc-ins05-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/06//obc-ins06-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/#">
+                                        <img src="https://casa.7uptheme.net/wp-content/uploads/2019/05//obc-ins01-100x100.jpg"
+                                            alt="Instagram image">
+                                        <span class="instagram-text-follow"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script src='js/script.js'></script>
+</body>
+
+</html>
